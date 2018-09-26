@@ -45,7 +45,7 @@
         <!--View Controller-->
         <scene sceneID="2BM-ME-7VK">
             <objects>
-                <viewController id="saE-Vp-M80" sceneMemberID="viewController">
+                <viewController id="saE-Vp-M80" customClass="ViewController" customModule="tabs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9fM-H6-h3K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,22 +55,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="126" id="fBp-m6-w9q">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellLugar" rowHeight="126" id="fBp-m6-w9q" customClass="CeldaLugar" customModule="tabs" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="126"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fBp-m6-w9q" id="s8b-mP-BWC">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="125.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="125.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZOF-Aj-7Om">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="126"/>
                                                 </imageView>
                                                 <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLR-U5-0Oa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="126"/>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8i-YS-EHX">
-                                                    <rect key="frame" x="135" y="44" width="105" height="36"/>
+                                                    <rect key="frame" x="118.5" y="44" width="105" height="36"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -89,6 +89,11 @@
                                                 <constraint firstAttribute="trailing" secondItem="ZLR-U5-0Oa" secondAttribute="trailing" id="xVP-OT-uCV"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgLugarCell" destination="ZOF-Aj-7Om" id="xw2-1I-w9D"/>
+                                            <outlet property="lblLugarNombre" destination="h8i-YS-EHX" id="93b-zh-AQg"/>
+                                            <segue destination="J01-bl-LCw" kind="show" id="Lou-fu-y1V"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -97,10 +102,28 @@
                         <viewLayoutGuide key="safeArea" id="LOd-nb-viv"/>
                     </view>
                     <navigationItem key="navigationItem" id="bC4-G7-7Bf"/>
+                    <connections>
+                        <outlet property="TbLugares" destination="pbK-7U-EVx" id="1Gr-Uv-51E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYW-NR-OYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1557.5999999999999" y="-358.4707646176912"/>
+        </scene>
+        <!--Lugar-->
+        <scene sceneID="Iqo-2L-pFn">
+            <objects>
+                <viewController title="Lugar" id="J01-bl-LCw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XB7-39-DYC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yPK-Cq-0W9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wxv-IV-eFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2465" y="-358"/>
         </scene>
         <!--Gaststätte-->
         <scene sceneID="YBD-QD-e10">

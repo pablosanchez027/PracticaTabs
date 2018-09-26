@@ -14,6 +14,8 @@
 		3DD3419C215B067300E94438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD3419A215B067300E94438 /* LaunchScreen.storyboard */; };
 		3DD341A7215B067300E94438 /* tabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD341A6215B067300E94438 /* tabsTests.swift */; };
 		3DD341B2215B067300E94438 /* tabsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD341B1215B067300E94438 /* tabsUITests.swift */; };
+		3DDC1E14215BE01700BA1474 /* CeldaLugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC1E13215BE01700BA1474 /* CeldaLugar.swift */; };
+		3DDC1E16215BE61100BA1474 /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC1E15215BE61100BA1474 /* Lugar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3DD341AD215B067300E94438 /* tabsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tabsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD341B1215B067300E94438 /* tabsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabsUITests.swift; sourceTree = "<group>"; };
 		3DD341B3215B067300E94438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DDC1E13215BE01700BA1474 /* CeldaLugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaLugar.swift; sourceTree = "<group>"; };
+		3DDC1E15215BE61100BA1474 /* Lugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Lugar.swift; path = tabs/Models/Lugar.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +101,7 @@
 		3DD34190215B067000E94438 /* tabs */ = {
 			isa = PBXGroup;
 			children = (
-				3DD341C1215B1B0B00E94438 /* Models */,
+				3DDC1E17215BED8D00BA1474 /* Models */,
 				3DD34191215B067000E94438 /* AppDelegate.swift */,
 				3DD341BF215B1AB600E94438 /* ViewControllers */,
 				3DD341C0215B1AD300E94438 /* Views */,
@@ -129,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				3DD34193215B067000E94438 /* ViewController.swift */,
+				3DDC1E13215BE01700BA1474 /* CeldaLugar.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -142,9 +147,10 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		3DD341C1215B1B0B00E94438 /* Models */ = {
+		3DDC1E17215BED8D00BA1474 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3DDC1E15215BE61100BA1474 /* Lugar.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -281,7 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD34194215B067000E94438 /* ViewController.swift in Sources */,
+				3DDC1E16215BE61100BA1474 /* Lugar.swift in Sources */,
 				3DD34192215B067000E94438 /* AppDelegate.swift in Sources */,
+				3DDC1E14215BE01700BA1474 /* CeldaLugar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

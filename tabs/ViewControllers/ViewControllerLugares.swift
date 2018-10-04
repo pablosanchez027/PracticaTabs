@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewControllerLugares: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
     @IBOutlet weak var tbLugares: UITableView!
@@ -57,4 +57,5 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
 }
+
 

@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3D0EF148215D6CFE00ABFA8B /* LugarDetalleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0EF147215D6CFE00ABFA8B /* LugarDetalleController.swift */; };
+		3D47BA8A2166AB1000694984 /* Platillo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D47BA892166AB1000694984 /* Platillo.swift */; };
+		3D47BA8C2166B1BA00694984 /* ViewControllerPlatillos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D47BA8B2166B1BA00694984 /* ViewControllerPlatillos.swift */; };
 		3DD34192215B067000E94438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD34191215B067000E94438 /* AppDelegate.swift */; };
-		3DD34194215B067000E94438 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD34193215B067000E94438 /* ViewController.swift */; };
+		3DD34194215B067000E94438 /* ViewControllerLugares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD34193215B067000E94438 /* ViewControllerLugares.swift */; };
 		3DD34197215B067000E94438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD34195215B067000E94438 /* Main.storyboard */; };
 		3DD34199215B067300E94438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD34198215B067300E94438 /* Assets.xcassets */; };
 		3DD3419C215B067300E94438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD3419A215B067300E94438 /* LaunchScreen.storyboard */; };
@@ -38,9 +40,11 @@
 
 /* Begin PBXFileReference section */
 		3D0EF147215D6CFE00ABFA8B /* LugarDetalleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugarDetalleController.swift; sourceTree = "<group>"; };
+		3D47BA892166AB1000694984 /* Platillo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platillo.swift; sourceTree = "<group>"; };
+		3D47BA8B2166B1BA00694984 /* ViewControllerPlatillos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPlatillos.swift; sourceTree = "<group>"; };
 		3DD3418E215B067000E94438 /* tabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD34191215B067000E94438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DD34193215B067000E94438 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DD34193215B067000E94438 /* ViewControllerLugares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLugares.swift; sourceTree = "<group>"; };
 		3DD34196215B067000E94438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DD34198215B067300E94438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DD3419B215B067300E94438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -134,7 +138,8 @@
 		3DD341BF215B1AB600E94438 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3DD34193215B067000E94438 /* ViewController.swift */,
+				3DD34193215B067000E94438 /* ViewControllerLugares.swift */,
+				3D47BA8B2166B1BA00694984 /* ViewControllerPlatillos.swift */,
 				3DDC1E13215BE01700BA1474 /* CeldaLugar.swift */,
 				3D0EF147215D6CFE00ABFA8B /* LugarDetalleController.swift */,
 			);
@@ -154,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				3DDC1E15215BE61100BA1474 /* Lugar.swift */,
+				3D47BA892166AB1000694984 /* Platillo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -290,10 +296,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D0EF148215D6CFE00ABFA8B /* LugarDetalleController.swift in Sources */,
-				3DD34194215B067000E94438 /* ViewController.swift in Sources */,
+				3DD34194215B067000E94438 /* ViewControllerLugares.swift in Sources */,
+				3D47BA8A2166AB1000694984 /* Platillo.swift in Sources */,
 				3DDC1E16215BE61100BA1474 /* Lugar.swift in Sources */,
 				3DD34192215B067000E94438 /* AppDelegate.swift in Sources */,
 				3DDC1E14215BE01700BA1474 /* CeldaLugar.swift in Sources */,
+				3D47BA8C2166B1BA00694984 /* ViewControllerPlatillos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

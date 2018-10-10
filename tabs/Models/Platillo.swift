@@ -14,18 +14,21 @@ class Platillo {
     var descripcionPlatillo : String
     var imagenPlatillo : UIImage
     var imagenDetallePlatillo : UIImage
+    var comentariosPlatillo : [Comentario] = []
     
     init() {
         nombrePlatillo = ""
         descripcionPlatillo = ""
         imagenPlatillo = UIImage()
         imagenDetallePlatillo = UIImage()
+        comentariosPlatillo = []
     }
     
-    init(nombrePlatillo : String, descripcionPlatillo : String, imagenPlatillo : UIImage, imagenDetallePlatillo : UIImage) {
+    init(nombrePlatillo : String, descripcionPlatillo : String, imagenPlatillo : UIImage, imagenDetallePlatillo : UIImage, comentariosPlatillo : [Comentario]) {
         self.nombrePlatillo = nombrePlatillo
         self.descripcionPlatillo = descripcionPlatillo
         self.imagenPlatillo = imagenPlatillo
         self.imagenDetallePlatillo = imagenDetallePlatillo
+        self.comentariosPlatillo = comentariosPlatillo 
     }
 }

@@ -6,21 +6,39 @@
 //  Copyright © 2018 Alumno. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class ViewControllerPlatillos: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let Platillos : [Platillo] = [
-        Platillo 
+        Platillo(nombrePlatillo: "Bratkartoffeln", descripcionPlatillo: "Bratkartoffeln ist eine allgemein gehaltene Bezeichnung verschiedener Rezepturen, in denen rohe oder vorgegarte Kartoffeln gebraten werden.", imagenPlatillo: UIImage(named: "Bratkartoffeln")!, imagenDetallePlatillo: UIImage(named: "Bratkartoffeln")!),
+        Platillo(nombrePlatillo: "Kartoffelsalat", descripcionPlatillo: "Kartoffelsalat wird aus gekochten Kartoffeln und weiteren Zutaten hergestellt. Grundsätzlich lassen sich die Zubereitungsarten mit und ohne Mayonnaise unterscheiden. In Süddeutschland und Österreich ist der Ausdruck Erdäpfelsalat verbreitet, die schweizerdeutsche Bezeichnung ist Härdöpfelsalat.", imagenPlatillo: UIImage(named: "Kartoffelsalat")!, imagenDetallePlatillo: UIImage(named: "Kartoffelsalat")!),
+        Platillo(nombrePlatillo: "Kohlrouladen", descripcionPlatillo: "Kohlrouladen, Kohlrollen, Krautwurst oder Krautwickel sind ein besonders in Europa und Westasien verbreitetes Gericht aus in verschiedenen Varianten gefüllten Kohlblättern, die gegart, gedünstet oder geschmort werden.", imagenPlatillo: UIImage(named: "Kohlrouladen")!, imagenDetallePlatillo: UIImage(named: "Kohlrouladen")!),
+        Platillo(nombrePlatillo: "Rote Grutze", descripcionPlatillo: "Rote Grütze ist eine Süßspeise der deutschen Küche sowie der Landesküchen Skandinaviens. Die Bezeichnung leitet sich von der typischen Rotfärbung durch die verwendeten Früchte ab. „Grütze“ bezieht sich auf die Verwendung von zerkleinerten stärkehaltigen Zutaten, die ihre typische Konsistenz begründen. Bei anderen Früchten wird der Name entsprechend auf gelbe Grütze oder grüne Grütze abgewandelt.", imagenPlatillo: UIImage(named: "Rote-Grutze")!, imagenDetallePlatillo: UIImage(named: "Rote-Grutze")!),
+        Platillo(nombrePlatillo: "Wiener Schnitzel", descripcionPlatillo: "Wiener Schnitzel ist ein dünnes, paniertes und ausgebackenes Schnitzel aus Kalbfleisch. Es gehört zu den bekanntesten Spezialitäten der Wiener Küche.", imagenPlatillo: UIImage(named: "Wienerschnitzel")!, imagenDetallePlatillo: UIImage(named: "Wienerschnitzel")!)
     ]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return Platillos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let celda = tableView.dequeueReusableCell(withIdentifier: "cellPlatillo") as! CeldaPlatillo
+        celda.lblPlatillo.text = Platillos[indexPath.row].nombrePlatillo
+        celda.imgPlatilloCell.image = Platillos[indexPath.row].imagenPlatillo
+        
+        return celda
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.title = "Geschirr"
+        
     }
     
     

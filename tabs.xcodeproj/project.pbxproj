@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D0EF148215D6CFE00ABFA8B /* LugarDetalleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0EF147215D6CFE00ABFA8B /* LugarDetalleController.swift */; };
+		3D14CA03216D6B53003C26C6 /* CeldaPlatillo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14CA02216D6B53003C26C6 /* CeldaPlatillo.swift */; };
 		3D47BA8A2166AB1000694984 /* Platillo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D47BA892166AB1000694984 /* Platillo.swift */; };
 		3D47BA8C2166B1BA00694984 /* ViewControllerPlatillos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D47BA8B2166B1BA00694984 /* ViewControllerPlatillos.swift */; };
 		3DD34192215B067000E94438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD34191215B067000E94438 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		3D0EF147215D6CFE00ABFA8B /* LugarDetalleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugarDetalleController.swift; sourceTree = "<group>"; };
+		3D14CA02216D6B53003C26C6 /* CeldaPlatillo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPlatillo.swift; sourceTree = "<group>"; };
 		3D47BA892166AB1000694984 /* Platillo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platillo.swift; sourceTree = "<group>"; };
 		3D47BA8B2166B1BA00694984 /* ViewControllerPlatillos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPlatillos.swift; sourceTree = "<group>"; };
 		3DD3418E215B067000E94438 /* tabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +143,7 @@
 				3DD34193215B067000E94438 /* ViewControllerLugares.swift */,
 				3D47BA8B2166B1BA00694984 /* ViewControllerPlatillos.swift */,
 				3DDC1E13215BE01700BA1474 /* CeldaLugar.swift */,
+				3D14CA02216D6B53003C26C6 /* CeldaPlatillo.swift */,
 				3D0EF147215D6CFE00ABFA8B /* LugarDetalleController.swift */,
 			);
 			path = ViewControllers;
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D14CA03216D6B53003C26C6 /* CeldaPlatillo.swift in Sources */,
 				3D0EF148215D6CFE00ABFA8B /* LugarDetalleController.swift in Sources */,
 				3DD34194215B067000E94438 /* ViewControllerLugares.swift in Sources */,
 				3D47BA8A2166AB1000694984 /* Platillo.swift in Sources */,

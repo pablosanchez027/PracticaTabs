@@ -11,6 +11,8 @@
 		3D14CA03216D6B53003C26C6 /* CeldaPlatillo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14CA02216D6B53003C26C6 /* CeldaPlatillo.swift */; };
 		3D14CA05216D7F76003C26C6 /* PlatilloDetalleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14CA04216D7F76003C26C6 /* PlatilloDetalleController.swift */; };
 		3D14CA07216D81A5003C26C6 /* Comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14CA06216D81A5003C26C6 /* Comentario.swift */; };
+		3D1B58F6216E5F5E00D34598 /* PlatiloComentariosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B58F5216E5F5E00D34598 /* PlatiloComentariosController.swift */; };
+		3D1B58F8216E62F000D34598 /* CeldaComentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B58F7216E62F000D34598 /* CeldaComentario.swift */; };
 		3D47BA8A2166AB1000694984 /* Platillo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D47BA892166AB1000694984 /* Platillo.swift */; };
 		3D47BA8C2166B1BA00694984 /* ViewControllerPlatillos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D47BA8B2166B1BA00694984 /* ViewControllerPlatillos.swift */; };
 		3DD34192215B067000E94438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD34191215B067000E94438 /* AppDelegate.swift */; };
@@ -46,6 +48,8 @@
 		3D14CA02216D6B53003C26C6 /* CeldaPlatillo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPlatillo.swift; sourceTree = "<group>"; };
 		3D14CA04216D7F76003C26C6 /* PlatilloDetalleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatilloDetalleController.swift; sourceTree = "<group>"; };
 		3D14CA06216D81A5003C26C6 /* Comentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comentario.swift; sourceTree = "<group>"; };
+		3D1B58F5216E5F5E00D34598 /* PlatiloComentariosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatiloComentariosController.swift; sourceTree = "<group>"; };
+		3D1B58F7216E62F000D34598 /* CeldaComentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaComentario.swift; sourceTree = "<group>"; };
 		3D47BA892166AB1000694984 /* Platillo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platillo.swift; sourceTree = "<group>"; };
 		3D47BA8B2166B1BA00694984 /* ViewControllerPlatillos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPlatillos.swift; sourceTree = "<group>"; };
 		3DD3418E215B067000E94438 /* tabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +154,8 @@
 				3D14CA02216D6B53003C26C6 /* CeldaPlatillo.swift */,
 				3D0EF147215D6CFE00ABFA8B /* LugarDetalleController.swift */,
 				3D14CA04216D7F76003C26C6 /* PlatilloDetalleController.swift */,
+				3D1B58F5216E5F5E00D34598 /* PlatiloComentariosController.swift */,
+				3D1B58F7216E62F000D34598 /* CeldaComentario.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -310,6 +316,8 @@
 				3D47BA8A2166AB1000694984 /* Platillo.swift in Sources */,
 				3D14CA07216D81A5003C26C6 /* Comentario.swift in Sources */,
 				3DDC1E16215BE61100BA1474 /* Lugar.swift in Sources */,
+				3D1B58F8216E62F000D34598 /* CeldaComentario.swift in Sources */,
+				3D1B58F6216E5F5E00D34598 /* PlatiloComentariosController.swift in Sources */,
 				3DD34192215B067000E94438 /* AppDelegate.swift in Sources */,
 				3DDC1E14215BE01700BA1474 /* CeldaLugar.swift in Sources */,
 				3D47BA8C2166B1BA00694984 /* ViewControllerPlatillos.swift in Sources */,

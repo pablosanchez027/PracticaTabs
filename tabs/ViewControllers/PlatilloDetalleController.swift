@@ -11,7 +11,6 @@ import UIKit
 
 class PlatilloDetalleController : UIViewController {
     @IBOutlet weak var imgPlatillo: UIImageView!
-    @IBOutlet weak var lblTitulo: UILabel!
     @IBOutlet weak var lblDescripcion: UILabel!
     @IBOutlet weak var lblUsuario: UILabel!
     @IBOutlet weak var lblComentario: UILabel!
@@ -29,6 +28,14 @@ class PlatilloDetalleController : UIViewController {
             
             lblUsuario.text = platilloSeleccionado.comentariosPlatillo[0].nombreComentario
             lblComentario.text = platilloSeleccionado.comentariosPlatillo[0].textoComentario
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToComentarios" {
+            let destino = segue.destination as! PlatilloComentariosController
+            
+            destino.comentarios = platillo?.comentariosPlatillo
         }
     }
 }
